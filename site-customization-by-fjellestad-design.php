@@ -1,9 +1,9 @@
 <?php
 /**
 * Plugin Name: Site Customization by Fjellestad Design
-* Plugin URI: https: //kernl. us
-* Description: My super great plugin. It is great.
-* Version: 1.0.9
+* Plugin URI: https: //fjellestad.design
+* Description: Site customization plugin for Fjellestad Design customers. 
+* Version: 1.0.10
 * Author: Sindre Fjellestad
 * Author URI: https://fjellestad.design
 */
