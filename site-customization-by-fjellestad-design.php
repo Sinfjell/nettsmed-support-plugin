@@ -3,7 +3,7 @@
 * Plugin Name: Site Customization by Fjellestad Design
 * Plugin URI: https: //kernl. us
 * Description: My super great plugin. It is great.
-* Version: 1.0.6
+* Version: 1.0.7
 * Author: Sindre Fjellestad
 * Author URI: https://fjellestad.design
 */
