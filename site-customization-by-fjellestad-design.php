@@ -18,5 +18,8 @@ $MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 // Include your PHP files
 require plugin_dir_path(__FILE__) . 'fjellestad-support-backend-widget.php';
 require plugin_dir_path(__FILE__) . 'remove-dashboard-widgets.php';
+require plugin_dir_path(__FILE__) . 'simpel-admin-role.php';
+
+register_activation_hook( __FILE__, 'create_simpel_admin_role' );
 
 ?>
