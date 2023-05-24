@@ -38,11 +38,35 @@ function simpel_admin_hide_menu() {
         remove_menu_page('wp-mail-smtp'); 
         remove_menu_page('jet-engine'); 
         remove_menu_page('jet-smart-filters'); 
+        remove_menu_page('update-core.php'); 
 
     }
     
 }
 
 add_action('admin_menu', 'simpel_admin_hide_menu');
+
+// The following 2 functions removes all notices with php and css
+function simpel_admin_hide_notices() {
+    if (!current_user_can('manage_options')) {
+        remove_all_actions('admin_notices');
+        remove_all_actions('all_admin_notices');
+    }
+}
+add_action('admin_print_scripts', 'simpel_admin_hide_notices', 9999);
+
+function simpel_admin_hide_specific_notices() {
+    echo '<style>
+    .notice-warning,
+    .e-notice,
+    .notice.notice-error,
+    .e-notice--dismissible,
+    .e-notice--extended {
+        display: none;
+    }
+    </style>';
+}
+add_action('admin_head', 'simpel_admin_hide_specific_notices');
+
 
 ?>
