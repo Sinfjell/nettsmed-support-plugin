@@ -39,6 +39,7 @@ function simpel_admin_hide_menu() {
         remove_menu_page('jet-engine'); 
         remove_menu_page('jet-smart-filters'); 
         remove_menu_page('update-core.php'); 
+        remove_submenu_page('index.php', 'update-core.php');
 
     }
     
