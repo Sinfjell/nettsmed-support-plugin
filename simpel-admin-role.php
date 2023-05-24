@@ -24,6 +24,7 @@ function create_simpel_admin_role() {
 }
 
 
+
 // Hide Plugins menu for Simpel Admin role
 add_action('admin_menu', 'simpel_admin_hide_menu', 9999);
 function simpel_admin_hide_menu() {
