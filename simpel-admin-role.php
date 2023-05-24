@@ -9,11 +9,15 @@ function create_simpel_admin_role() {
     $admin_capabilities = $admin_role->capabilities;
 
     // Remove specific capabilities
-    unset($admin_capabilities['activate_plugins']);
-    unset($admin_capabilities['install_plugins']);
-    unset($admin_capabilities['update_plugins']);
-    unset($admin_capabilities['delete_plugins']);
-    unset($admin_capabilities['edit_plugins']);
+    $capabilities_to_remove = [
+        'activate_plugins', 'delete_plugins', 'edit_plugins', 'install_plugins', 'update_plugins',
+        'switch_themes', 'edit_themes', 'delete_themes', 'install_themes', 'update_themes',
+        'update_core'
+    ];
+
+    foreach ($capabilities_to_remove as $capability) {
+        unset($admin_capabilities[$capability]);
+    }
 
     // Add the Simpel Admin role with the modified capabilities
     add_role(
