@@ -3,7 +3,7 @@
 * Plugin Name: Site Customization by Fjellestad Design
 * Plugin URI: https: //fjellestad.design
 * Description: Site customization plugin for Fjellestad Design customers. 
-* Version: 1.0.11
+* Version: 1.1.0
 * Author: Sindre Fjellestad
 * Author URI: https://fjellestad.design
 */
