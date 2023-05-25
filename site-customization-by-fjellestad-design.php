@@ -22,4 +22,6 @@ require plugin_dir_path(__FILE__) . 'simpel-admin-role.php';
 
 register_activation_hook( __FILE__, 'create_simpel_admin_role' );
 
+require_once plugin_dir_path(__FILE__) . 'custom-dashboard.php';
+
 ?>
