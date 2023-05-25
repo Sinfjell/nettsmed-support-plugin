@@ -12,9 +12,9 @@
 <h2><strong>Hurtiglenker</strong></h2>
 
 <ul>
-  <li><a href="https://tverrkirkeligno.local/wp-admin/users.php">Opprett ny bruker</a></li>
-  <li><a href="https://tverrkirkeligno.local/wp-admin/post-new.php">Legg til nytt innlegg</a></li>
-  <li><a href="https://tverrkirkeligno.local/wp-admin/nav-menus.php">Tilpass menyen din</a></li>
+  <li><a href="/wp-admin/users.php">Opprett ny bruker</a></li>
+  <li><a href="/wp-admin/post-new.php">Legg til nytt innlegg</a></li>
+  <li><a href="/wp-admin/nav-menus.php">Tilpass menyen din</a></li>
 </ul>
 
   </div>
