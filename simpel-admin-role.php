@@ -67,7 +67,8 @@ function simpel_admin_hide_specific_notices() {
     .e-notice,
     .notice.notice-error,
     .e-notice--dismissible,
-    .e-notice--extended {
+    .e-notice--extended,
+    li#wp-admin-bar-wp-mail-smtp-menu {
         display: none;
     }
     </style>';
