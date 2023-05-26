@@ -12,7 +12,7 @@ function my_custom_dashboard_page() {
         'Brukerveiledning', 
         'Brukerveiledning', 
         'edit_posts', // capability
-        'my-custom-menu', 
+        'brukerveiledning', 
         function() {
             include plugin_dir_path(__FILE__) . 'assets/html/my-custom-dashboard-content.php'; // include your separate HTML/PHP file here
         }
