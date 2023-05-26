@@ -15,9 +15,11 @@ function my_custom_dashboard_page() {
         'brukerveiledning', 
         function() {
             include plugin_dir_path(__FILE__) . 'assets/html/my-custom-dashboard-content.php'; // include your separate HTML/PHP file here
-        }
+        },
+        'dashicons-admin-network' // icon URL or dashicon class
     );
 }
+
 
 add_action('admin_menu', 'my_custom_dashboard_page');
 
