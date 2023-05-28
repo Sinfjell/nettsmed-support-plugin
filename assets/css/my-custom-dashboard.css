@@ -1,8 +1,7 @@
 .my-custom-dashboard {
   /* Add your CSS styles here */
-  width: 100%; /* ensures that the dashboard takes the full width of its parent */
+  
 }
-
 .my-custom-dashboard h1 {
   /* Example: Add styles for the h1 tag */
   color: #333;
@@ -22,16 +21,9 @@
   display: flex;
 }
 
-.column-1 {
-  flex: 0 0 40%; /* The first 0 is for 'flex-grow', the second 0 is for 'flex-shrink' */
+.column {
+  flex: 50%;
   padding: 30px;
-  box-sizing: border-box; /* includes padding and border in the column's total width */
-}
-
-.column-2 {
-  flex: 0 0 60%;
-  padding: 30px;
-  box-sizing: border-box; /* includes padding and border in the column's total width */
 }
 
 iframe {

@@ -1,6 +1,6 @@
 
 <div class="my-custom-dashboard">
-  <div class="column-1">
+  <div class="column">
   <h1><strong>Velkommen til din nettside</strong></h1>
 
 <p>Velkommen til baksiden av nettsiden din; til ditt kontrollpanel/dashboard. Her har du tilgang til både enkle og avanserte justeringsmuligheter. Se videoene for en grunnleggende introduksjon til verktøyene dine.</p>
@@ -18,7 +18,7 @@
 </ul>
 
   </div>
-  <div class="column-2">
+  <div class="column">
   <div class="intro-wordpress-video">
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/797109504?h=29e41cab22" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
 </div>
