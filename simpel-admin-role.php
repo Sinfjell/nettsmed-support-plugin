@@ -61,21 +61,24 @@ function simpel_admin_hide_notices() {
 }
 add_action('admin_print_scripts', 'simpel_admin_hide_notices', 9999);
 
-// CSS for simpel admins and lower
 function simpel_admin_hide_specific_notices() {
-    echo '<style>
-    .notice-warning,
-    .e-notice,
-    .notice.notice-error,
-    .e-notice--dismissible,
-    .e-notice--extended,
-    li#wp-admin-bar-wp-mail-smtp-menu,
-    #menu-dashboard {
-        display: none;
+    // Check user capabilities
+    if (current_user_can('edit_posts') && !current_user_can('activate_plugins')) {
+        echo '<style>
+        .notice-warning,
+        .e-notice,
+        .notice.notice-error,
+        .e-notice--dismissible,
+        .e-notice--extended,
+        li#wp-admin-bar-wp-mail-smtp-menu,
+        #menu-dashboard {
+            display: none;
+        }
+        </style>';
     }
-    </style>';
 }
 add_action('admin_head', 'simpel_admin_hide_specific_notices');
+
 
 // Remove dashboards for simpel admin and lower user roles
 function redirect_to_custom_dashboard() {
