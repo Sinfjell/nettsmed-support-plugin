@@ -46,7 +46,7 @@ function enqueue_live_chat() { if(current_user_can('subscriber')) {
     },
     "ANSWER": {
       "label": "Svar",
-      "subtitle": "Hjelpeartikler"
+      "subtitle": "Brukerstøtte for nettsmed"
     },
     "URL": "https://nettsmed.no/wp-json/wp/v2/docs",
     "SEARCH": {
