@@ -1,11 +1,11 @@
 <?php
 /**
-* Plugin Name: Site Customization by Fjellestad Design
-* Plugin URI: https: //fjellestad.design
-* Description: Site customization plugin for Fjellestad Design customers. 
-* Version: 1.1.6
+* Plugin Name: Site Customization by Nettsmed
+* Plugin URI: https: //nettsmed.no
+* Description: Site customization plugin for Nettsmed customers. 
+* Version: 1.1.7
 * Author: Sindre Fjellestad
-* Author URI: https://fjellestad.design
+* Author URI: https://nettsmed.no
 */
 
 require 'kernl-update-checker/kernl-update-checker.php';
