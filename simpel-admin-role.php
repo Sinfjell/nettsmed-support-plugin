@@ -19,6 +19,10 @@ function create_simpel_admin_role() {
         unset($admin_capabilities[$capability]);
     }
 
+    $admin_capabilities['edit_theme_options'] = true;
+
+
+
     // Add the Simpel Admin role with the modified capabilities
     add_role(
         'simpel_admin',
@@ -44,7 +48,10 @@ function simpel_admin_hide_menu() {
         remove_menu_page('jet-engine'); 
         remove_menu_page('jet-smart-filters'); 
         remove_menu_page('update-core.php'); 
+        
+        // remove submenus
         remove_submenu_page('index.php', 'update-core.php');
+        remove_submenu_page('themes.php', 'themes.php'); // remove themes.php from the sidebar
 
     }
     
