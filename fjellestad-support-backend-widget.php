@@ -3,86 +3,13 @@ function enqueue_live_chat() { if(current_user_can('subscriber')) {
     return;
   } ?>
 
-<div id="betterdocs-ia"></div>
-<link rel="stylesheet" href="https://nettsmed.no/wp-content/plugins/betterdocs-pro/assets/public/css/instant-answer.css">
-    <style type="text/css">.betterdocs-widget-container{z-index:9999;}.betterdocs-conversation-container,
-            .betterdocs-footer-wrapper, .betterdocs-launcher, .betterdocs-ask-wrapper .betterdocs-ask-submit,
-            .betterdocs-footer-wrapper .bd-ia-feedback-wrap, .betterdocs-footer-wrapper .bd-ia-feedback-response{background-color:#2f5d62;}betterdocs-header-wrapper .betterdocs-header .inner-container.betterdocs-active-answer .toggle:first-of-type > p,
-            .betterdocs-header-wrapper .betterdocs-header .inner-container.betterdocs-active-ask .toggle:last-of-type > p{color:#2f5d62;}.betterdocs-header-wrapper .betterdocs-header .inner-container.betterdocs-active-answer .toggle:first-of-type svg,
-            .betterdocs-header-wrapper .betterdocs-header .inner-container.betterdocs-active-ask .toggle:last-of-type svg{fill:#2f5d62;}.betterdocs-header-wrapper .betterdocs-header .inner-container,
-            .betterdocs-footer-wrapper .betterdocs-footer-emo > div{background-color:#8FA1A3;}.betterdocs-launcher[type=button], .betterdocs-launcher[type=button]:focus{background-color:#2f5d62;}.betterdocs-widget-container .betterdocs-launcher[type=button]:hover{background-color:#2f5d62 !important;}.betterdocs-header-wrapper .betterdocs-sub-header.betterdocs-ans-header > h3,
-            .betterdocs-header-wrapper .betterdocs-sub-header.betterdocs-ask-header > h3{color:#fff;}.betterdocs-header-wrapper .betterdocs-sub-header.betterdocs-ans-header > h3.bd-ia-subtitle,
-            .betterdocs-header-wrapper .betterdocs-sub-header.betterdocs-ask-header > h3.bd-ia-subtitle{font-size:19px;}.betterdocs-header-wrapper .betterdocs-sub-header.betterdocs-ans-header > p,
-            .betterdocs-header-wrapper .betterdocs-sub-header.betterdocs-ask-header > p{color:#fff;}.betterdocs-header-wrapper .betterdocs-sub-header.betterdocs-ans-header > p,
-            .betterdocs-header-wrapper .betterdocs-sub-header.betterdocs-ask-header > p{font-size:12px;}.betterdocs-tab-content-wrapper .bdc-search-box,
-            .betterdocs-tab-content-wrapper .bdc-search-box .search-button,
-            .betterdocs-tab-content-wrapper .bdc-search-box input{background-color:#fff;}.betterdocs-tab-content-wrapper .bdc-search-box input{color:#2c3338;}.betterdocs-tab-content-wrapper .bdc-search-box .search-button svg{fill:#ccc;}.betterdocs-messages-container .betterdocs-card-link .betterdocs-card-title-wrapper .betterdocs-card-title{color:#1d2327;}.betterdocs-messages-container .betterdocs-card-link .betterdocs-card-title-wrapper .betterdocs-card-title{font-size:16px;}.betterdocs-messages-container .betterdocs-card-link .betterdocs-card-body-wrapper .betterdocs-card-body{font-size:16px;}.betterdocs-footer-wrapper .betterdocs-footer-label p{font-size:14px;}.betterdocs-footer-wrapper .betterdocs-emo{fill:#fff;}.betterdocs-footer-wrapper .betterdocs-footer-emo > div{width:30px;height:30px;}.betterdocs-footer-wrapper .betterdocs-emo{width:15px;height:15px;}.betterdocs-footer-wrapper .bd-ia-feedback-response .feedback-success-icon{width:0px;}.betterdocs-footer-wrapper .bd-ia-feedback-response .feedback-success-title{font-size:13px;}.betterdocs-tab-ask .betterdocs-ask-wrapper input[type="text"],
-            .betterdocs-tab-ask .betterdocs-ask-wrapper input[type="email"],
-            .betterdocs-tab-ask .betterdocs-ask-wrapper textarea{background-color:#fff;}.betterdocs-tab-ask .betterdocs-ask-wrapper .betterdocs-ask-submit{background-color:#2f5d62;}.betterdocs-tab-ask .betterdocs-ask-wrapper .betterdocs-ask-submit:hover{background-color:#2f5d62;}.betterdocs-tab-ask .betterdocs-ask-wrapper .betterdocs-ask-submit.betterdocs-disable-submit{background-color:#2f5d62;}.betterdocs-tab-ask .betterdocs-ask-wrapper .betterdocs-ask-submit.betterdocs-disable-submit:hover{background-color:#2f5d62;}.betterdocs-messages-container .betterdocs-modal-wrapper .betterdocs-modal-content-container .betterdocs-ia-content h1{font-size:26px;}.betterdocs-messages-container .betterdocs-modal-wrapper .betterdocs-modal-content-container .betterdocs-ia-content h2{font-size:24px;}.betterdocs-messages-container .betterdocs-modal-wrapper .betterdocs-modal-content-container .betterdocs-ia-content h3{font-size:22px;}.betterdocs-messages-container .betterdocs-modal-wrapper .betterdocs-modal-content-container .betterdocs-ia-content h4{font-size:20px;}.betterdocs-messages-container .betterdocs-modal-wrapper .betterdocs-modal-content-container .betterdocs-ia-content h5{font-size:18px;}.betterdocs-messages-container .betterdocs-modal-wrapper .betterdocs-modal-content-container .betterdocs-ia-content h6{font-size:16px;}.betterdocs-messages-container .betterdocs-modal-wrapper .betterdocs-modal-content-container .betterdocs-ia-content,
-            .betterdocs-messages-container .betterdocs-modal-wrapper .betterdocs-modal-content-container .betterdocs-ia-content p,
-            .betterdocs-messages-container .betterdocs-modal-wrapper .betterdocs-modal-content-container .betterdocs-ia-content strong{font-size:16px;}.betterdocs-ask-wrapper input:not([type="submit"]),
-            .betterdocs-ask-wrapper textarea, .betterdocs-ask-wrapper .betterdocs-attach-button{color:#939eaa;}.betterdocs-ask-wrapper .betterdocs-attach-button{fill:#939eaa;}.betterdocs-ask-wrapper input:not([type="submit"])::placeholder,
-            .betterdocs-ask-wrapper textarea::placeholder{color:#939eaa;}.betterdocs-ask-wrapper input:not([type="submit"]), .betterdocs-ask-wrapper textarea{color:#939eaa !important;} 
-            
-            /* styling text font of button */
-            .betterdocs-header-wrapper .betterdocs-header .inner-container.betterdocs-active-answer .toggle:first-of-type > p {
-            color: #2f5d62;
-            }
-            img.betterdocs-brand-logo, .betterdocs-brand-wrapper {
-            display: none!important;
-            }
-            
-            /* removing feedback */
-            .bd-ia-feedback-wrap {
-             display: none!important;
-            }
-            </style>
-    <script>
-  window.betterdocs = {
-    "CHAT": {
-      "label": "Spør",
-      "subtitle": "Står du fast med noe? Send oss en melding.",
-      "subtitle_two": "Vanligvis svarer vi innen 24-48 timer."
-    },
-    "ANSWER": {
-      "label": "Svar",
-      "subtitle": "Brukerstøtte for Nettsmed"
-    },
-    "URL": "https://nettsmed.no/wp-json/wp/v2/docs",
-    "SEARCH": {
-      "SEARCH_URL": "https://nettsmed.no/wp-json/wp/v2/docs",
-      "SEARCH_PLACEHOLDER": "Søk...",
-      "OOPS": "Oops...",
-      "NOT_FOUND": "Vi kunne ikke finne dokumenter som matcher søket ditt. Prøv å søke på en ny betegnelse."
-    },
-    "FEEDBACK": {
-      "DISPLAY": true,
-      "SUCCESS": "Takk for tilbakemeldingen",
-      "TEXT": "Hva synes du om denne artikkelen?",
-      "URL": "https://nettsmed.no/wp-json/betterdocs/v1/feedback"
-    },
-    "RESPONSE": {
-      "title": "Takk for tilbakemeldingen"
-    },
-    "ASKFORM": {
-      "NAME": "Navn",
-      "EMAIL": "E-postadresse",
-      "SUBJECT": "Emne",
-      "TEXTAREA": "Hvordan kan vi hjelpe?",
-      "ATTACHMENT": "Støtter bare .jpg, .png, .jpeg, .gif filer",
-      "SENDING": "Sender",
-      "SEND": "Send"
-    },
-    "ASK_URL": "https://nettsmed.no/wp-json/betterdocs/v1/ask",
-    "THANKS": {
-      "title": "Takk",
-      "text": "Meldingen din er sendt vellykket"
-    }
-  };
-</script>
-
-    <script src="https://nettsmed.no/wp-content/plugins/betterdocs-pro/assets/public/js/instant-answer.js"></script>
-    
+<div class="betterdocs-cross-domain-code">
+    <div id="betterdocs-ia"></div>
+    <link rel="stylesheet" href="https://nettsmed.no/wp-content/plugins/betterdocs-pro/assets/public/css/instant-answer.css">
+    <style type="text/css">.betterdocs-ia-launcher-wrapper .betterdocs-ia-launcher, .betterdocs-ia-common-header, .betterdocs-ia-common-header .betterdocs-ia-search .betterdocs-ia-search-icon, .betterdocs-ia-tab-message-container .betterdocs-ia-feedback-form .betterdocs-ia-submit button, .betterdocs-ia-single-docs-wrapper .betterdocs-ia-singleDoc-footer .betterdocs-ia-footer-feedback{background-color:#2f5d62;}.betterdocs-ia-single-docs-wrapper .betterdocs-ia-singleDoc-header , .betterdocs-ia-tabs .active p{color:#2f5d62;}.betterdocs-ia-single-docs-wrapper .betterdocs-ia-singleDoc-header .content-icon-expand svg path, .betterdocs-ia-docs-content .content-icon svg path, .betterdocs-ia-single-docs-wrapper .betterdocs-ia-singleDoc-header .content-icon-back svg path{fill:#2f5d62;}.betterdocs-ia-tabs li.active svg g path{fill:#2f5d62;}.betterdocs-ia-launcher-wrapper .betterdocs-ia-launcher:hover{background-color:#5e8b7e;}.betterdocs-ia-common-header .betterdocs-title:not(:last-child){color:#fff;}.betterdocs-ia-common-header h2{color:#fff;}.betterdocs-ia-common-header .betterdocs-info{color:#fff;}.betterdocs-ia-docs .betterdocs-ia-docs-heading .doc-title{color:#111213;}.betterdocs-ia-docs .betterdocs-ia-docs-heading{background-color:#fff;}.betterdocs-ia-docs-content .content-item h4{color:#111213;}.betterdocs-ia-docs-content .content-item p{color:#6D7175;}.betterdocs-ia-docs-content{background-color:#fff;}.betterdocs-ia-common-header .betterdocs-ia-search, .betterdocs-ia-common-header .betterdocs-ia-search .betterdocs-ia-search-field{background-color:#fff;}.betterdocs-ia-common-header .betterdocs-ia-search .betterdocs-ia-search-field::placeholder{color:#1c1c1c;}.betterdocs-ia-common-header .betterdocs-ia-search .betterdocs-ia-search-field{color:#000000;}.betterdocs-ia-common-header .betterdocs-ia-search .betterdocs-ia-search-icon svg{fill:#FFFFFF;}.betterdocs-ia-tabs{background-color:#FFF;}.betterdocs-ia-tabs li p{color:#202223;}.betterdocs-ia-tab-message-container .message__header .header__content h4{color:#fff;}.betterdocs-ia-tab-message-container .message__header .header__content p{color:#fff;}.betterdocs-ia-tab-message-container .betterdocs-ia-feedback-form .betterdocs-ia-group .ia-input, .betterdocs-ia-tab-message-container .betterdocs-ia-feedback-form .betterdocs-ia-group > textarea{background-color:#fff;}.betterdocs-ia-tab-message-container .betterdocs-ia-feedback-form .betterdocs-ia-email-group p, .betterdocs-ia-tab-message-container .betterdocs-ia-feedback-form .betterdocs-ia-name-group p, .betterdocs-ia-tab-message-container .betterdocs-ia-feedback-form .betterdocs-ia-subject-group p, .betterdocs-ia-tab-message-container .betterdocs-ia-feedback-form .betterdocs-ia-message-group p{color:#202223;}.betterdocs-ia-tab-message-container .betterdocs-ia-feedback-form .betterdocs-ia-attachments-group button{background-color:#fff;}.betterdocs-ia-tab-message-container .betterdocs-ia-feedback-form .betterdocs-ia-attachments-group p{color:#6d7175;}.betterdocs-ia-single-docs-wrapper .betterdocs-ia-singleDoc-content .doc-title{color:#111213;}.betterdocs-ia-single-docs-wrapper .betterdocs-ia-singleDoc-header.on-scroll h2{color:#111213;}.betterdocs-ia-single-docs-wrapper .betterdocs-ia-singleDoc-header{background-color:#F6F6F7;}.betterdocs-ia-single-docs-wrapper .betterdocs-ia-singleDoc-header .content-icon-back, .betterdocs-ia-single-docs-wrapper .betterdocs-ia-singleDoc-header .content-icon-expand{background-color:#f6f6f7;}.betterdocs-ia-single-docs-wrapper .betterdocs-ia-singleDoc-footer .betterdocs-ia-footer-feedback .betterdocs-ia-reaction-group .ia-reaction{background-color:#00A375;}.betterdocs-ia-single-docs-wrapper .betterdocs-ia-singleDoc-footer .betterdocs-ia-footer-feedback .betterdocs-ia-reaction-group .ia-reaction .betterdocs-emo{fill:#ffffff;}.betterdocs-ia-single-docs-wrapper .betterdocs-ia-singleDoc-footer .betterdocs-ia-footer-feedback p{color:#FAFAFA;}.betterdocs-ia-launcher-wrapper{right:20px;}.betterdocs-ia-main-wrapper{right:20px;}</style>
+    <script> window.betterdocs = {"IA_NONCE":"819de3e2a7","BASE_URL":"https:\/\/nettsmed.no\/wp-json\/","CHAT":{"show":true,"label":"Sp\u00f8r","subtitle":"Sliter du med noe? Send oss en melding.","subtitle_two":"Vi svarer innen 12-24 timer."},"ANSWER":{"label":"Svar","subtitle":"\u00d8yeblikkelig svar"},"URL":"https:\/\/nettsmed.no\/wp-json\/wp\/v2\/docs?per_page=100","SEARCH":{"show":false,"SEARCH_URL":"https:\/\/nettsmed.no\/wp-json\/wp\/v2\/docs?per_page=100","SEARCH_PLACEHOLDER":"S\u00f8k etter l\u00f8sninger...","OOPS":"Oops...","NOT_FOUND":"Vi fant ingen artikler som stemmer med s\u00f8ket ditt. Pr\u00f8v nye s\u00f8keord."},"FEEDBACK":{"DISPLAY":false,"SUCCESS":"Takk for din melding!","TEXT":"How did you feel?","URL":"https:\/\/nettsmed.no\/wp-json\/betterdocs\/v1\/feedback"},"RESPONSE":[],"ASKFORM":{"NAME":"Navn","EMAIL":"Epostadresse","SUBJECT":"Emne","TEXTAREA":"Hvordan kan vi hjelpe?","ATTACHMENT":"Accepts .gif, .jpeg, png, pdf, jpg and .png","SENDING":"Sender","SEND":"Send"},"ASK_URL":"https:\/\/nettsmed.no\/wp-json\/betterdocs\/v1\/ask","FAQ":{"faq-title":"FAQ","faq-switch":true,"faq_content_type":"faq-list","faq-terms":[],"faq-list":[],"faq-terms-order":"asc","faq-terms-order-by":"name","faq-list-orderby":"id","faq-list-order":"asc"},"DOC_CATEGORY":{"doc-title":"Kategorier","doc-terms":["all"],"doc-category-switch":true,"doc-terms-order":"asc","doc-terms-order-by":"name"},"HOME_TAB_TITLE":"Home","HOME_CONTENT":"docs","HOME_TITLE":"Trenger du hjelp? ","HOME_SUBTITLE":"Trenger du hjelp? F\u00e5 raske l\u00f8sninger p\u00e5 eventuelle problemer du m\u00f8ter.","RESOURCES_TITLE":"Ressurser","RESOURCES_TAB_TITLE":"Ressurser","HEADER_ICON":[],"HEADER_LOGO":[],"TAB_HOME_ICON":[],"TAB_MESSAGE_ICON":[],"TAB_RESOURCE_ICON":[],"BRANDING":{"show":false},"THANKS":{"title":"Takk!","text":"Vi har mottatt din melding!"}} </script>
+    <script src="https://nettsmed.no/wp-content/plugins/betterdocs-pro/assets/public/js/instant-answer-cd.js"></script>
+</div>
 <?php    }
 
 

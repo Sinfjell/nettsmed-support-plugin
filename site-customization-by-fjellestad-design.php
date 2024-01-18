@@ -1,11 +1,11 @@
 <?php
 /**
 * Plugin Name: Site Customization by Nettsmed
-* Plugin URI: https: //nettsmed.no
+* Plugin URI: https://nettsmed.no
 * Description: Site customization plugin for Nettsmed customers. 
-* Version: 1.1.7
+* Version: 1.1.8
 * Author: Sindre Fjellestad
-* Author URI: https://nettsmed.no
+* Author URI: https://github.com/Sinfjell
 */
 
 require 'kernl-update-checker/kernl-update-checker.php';
